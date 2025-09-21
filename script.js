@@ -7,10 +7,3 @@ document.getElementById("submit-btn").addEventListener("click", function(){
   const isValid = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
   this.style.borderColor = isValid ? "green" : "red";
 });
-Let=[
-  {
-  let={
-  name:''
-  }
-  }
-];
