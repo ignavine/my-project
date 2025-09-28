@@ -7,79 +7,286 @@ document.getElementById("submit-btn").addEventListener("click", function(){
   const isValid = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
   this.style.borderColor = isValid ? "green" : "red";
 });
+
+
+
+
+
+
+
+
+const data= {
+Mankon:[
+  {
+    title: "achu",
+    descriptio: "Achu is a traditional dish from Cameroon, typically made with pounded cocoyams and served with a yellow soup made from palm oil, spices, and sometimes meat or fish.",
+    image:"images/Achu.jpg",
+    tribalname:"",
+    ingredients: [
+      "Cocoyams",
+      "Palm oil",
+      "Spices (e.g., kanwa,)",
+      "Meat or fish (optional)",
+      "Salt"
+    ]
+  } ,
+  {
+  title:"fufu",
+  description:"Fufu is a staple food in  Cameroon. It is made by boiling starchy vegetables then pounding them into a smooth, dough-like consistency. Fufu is typically served with soups or stews.",
+  image:"images/fufu.jpg",
+  tribalname:"",
+  ingredients: [
+    "Cassava, yams, or plantains",
+    "Water",
+    "Salt (optional)"
+  ]
+  }
+],
+Kom:[
 {
-"list"=[
-{
-Meal:"Achu",
-Tribe:"Mankon,Bafut,Babaki,Mbengwi",
-desciption:"A rich meal made with pounded cocoyams and banana and yellow soup and mostly eaten in the northwest",
-"image":"images/Achu.jpg",
+title:"fufu  and khati khati",
+description:"Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
+image:"images/fufu.jpg",
+tribalname:"",
+ingredients: [
+"corn flour",
+"Boild water",
+"Fresh vegitable",
+"Fowl",
+"maggi ans salt"
+]
 },
 {
-Meal:"Fufu",
-Tribe:"Kom,Bali, Nso, Wom",
-desciption:"It is a meal made with fufu-corn, Khati Khati and njama njama  ",
-"image":"images/fufu.jpg",
-},
-{
-Meal:"Eru",
-Tribe:"Bakossi, Balondo,Belong ",
-desciption:"It is a meal made with  Water leaves,eru leaves and Water fufu produced from cassava",
-"image":"images/Eru.jpg"
-},
-{
-Meal:"Ndole",
-Tribe:"Bakweri,  Wimbom , Ewondo",
-desciption:"It is a meal made with better leaves and groundnuts together with cassave or plantains",
-"image":"images/Ndole.jpg",
-},
-{
-Meal:"Ekwang",
-Tribe:"Bafwa,Balondo,Bakossi" ,
-desciption:"It is a meal made with gratered coco yams wraped in coco leaves ",
-"image":"images/Ekwang.jpg",
-},
-{
-Meals:"Koki",
-Tribe:"Mbo Bafang Banen Bassa" ,
-desciption:"It is a meal made with Koki beans and cassava/plantains",
-"image":"images/koki.jpg",
-},
-{
-Meals:"Kok",
-Tribe:"Pango,Abo, Bakoko" ,
-desciption:"It is a meal made with kok leaves and cassava",
-"image":"images/kok.jpg",
-},
-{
-Meals:"Beans",
-Tribe:"Batibo" ,
-desciption:"It is a meal made with beans and red oil with plantians",
-"image":"images/beans.jpg",
-},
-{
-Meals:"Bongo",
-Tribe:"Mouakobo,Monoka,Nkongsamba" ,
-desciption:"It is a meal made with some spieces and plantians",
-"image":"images/bongochobi.jpg",
-},
-{
-Meals:"Kokicorn",
-Tribe:"Nkonsamba,Melong,Bangem,Bafang" ,
-desciption:"It is a meal made with fresh grind corn",
-"image":"images/koki corn.jpg",
-},
-{
-Meals:"Turning coco",
-Tribe:"Mamfe Meta Belo" ,
-desciption:"It is a meal made Coco yams and better leaves",
-"image":"images/coco.jpg",
-},
-{
-Meals:"Sanga",
-Tribe:"Beti, Bakewri Fang" ,
-desciption:"It is a meal made with fresh corn and cassava leaves",
-"image":"images/sanga.jpg",
+title: "achu",
+    descriptio: "Achu is a traditional dish from Cameroon, typically made with pounded cocoyams and served with a yellow soup made from palm oil, spices, and sometimes meat or fish.",
+    image:"images/Achu.jpg",
+    tribalname:"",
+    ingredients: [
+      "Cocoyams",
+      "Palm oil",
+      "Spices (e.g., kanwa,)",
+      "Meat or fish (optional)",
+      "Salt"
+    ]
 }
+],
+Batibo:[
+{
+title:"Beans & Plantian",
+description:"It is a traditional meal in batibo made with beans,palm oil, meat,bonga and plantians",
+image:"images/beans.jpg",
+ingredients:[
+  "Beans",
+  "Red oil",
+  "Bonga",
+  "Maggi and salt",
+  "Plantians"
+]
+},
+{
+Title:"Better leave and banana",
+description:"It is one of the cultural meals of batibo maid with better leave,palm oil and banana",
+ingredients:[
+"Better leave",
+"Red oil",
+"Dry meat",
+"Massopo",
+"Maggi and salt"
 ]
 }
+],
+Bassa:[
+{
+Title:"Koki and cassava",
+description:"Koki and cassava is a traditional meal in Bassa which is made with koki beans,red oil,and cassava",
+image:"images/koki.jpg",
+ingredients:[
+"Koki beans",
+"Red oil",
+"Coco leaves",
+"Salt and Maggi",
+"Cassava",
+]
+},
+{
+Title:"Ndole",
+description:"Ndole and plantian is a traditional meal made with better leaves ,groundnuts,and plantians ",
+image:"images/Ndole.jpg",
+ingredients:[
+"Better leaves",
+"Groundnuts",
+"Groundnut oil",
+"Maggi and salt",
+"Ginger and gallies",
+"onion",
+"Plantians"
+]
+}
+],
+Bali:[
+{
+Title:"Fufu",
+title:"fufu  and Soup",
+description:"Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
+image:"images/fufu.jpg",
+tribalname:"",
+ingredients: [
+"corn flour",
+"Boild water",
+"Fresh vegitable",
+"Fowl",
+"maggi ans salt"
+]
+}
+],
+Bamilike:[
+{
+Title:"Eru",
+description:"Eru is a traditional meal in Bamilike made with water leaves, eru leaves, red oil and water fufu",
+image:"images/Eru.jpg",
+ingredients:[
+"Water leaves",
+"Eru leaves",
+"Red oil",
+"Salt and maggi",
+"Crefish",
+"Water fufu"
+]
+},
+{
+Title:"Koki ",
+description:"Koki and cassava is a traditional meal in Bamilike which is made with koki beans,red oil,and cassava",
+image:"images/koki.jpg",
+ingredients:[
+"Koki beans",
+"Red oil",
+"Coco leaves",
+"Salt and Maggi",
+"Cassava",
+]
+}
+],
+Manfe:[
+{
+Title:"Turning cocoyams",
+description:"Turning cocoyams is a traditional meal in Manfe made with cocoyams, red oil and better leaves",
+image:"images/turning.jpg",
+ingredients:[
+"Cocoyams",
+"Red oil",
+"Better leaves",
+"Salt and maggi",
+"Dry fish"
+]
+},
+{
+Title:"Beans and plantian",
+description:"It is a traditional meal in batibo made with beans,palm oil, meat,bonga and plantians",
+image:"images/beans.jpg",
+ingredients:[
+  "Beans",
+  "Red oil",
+  "Bonga",
+  "Maggi and salt",
+  "Plantians"
+]
+}
+],
+Meta:[
+  {
+  Title:"Turning cocoyams",
+  description:"Turning cocoyams is a traditional meal in Manfe made with cocoyams, red oil and better leaves",
+  image:"images/turning.jpg",
+  ingredients:[
+  "Cocoyams",
+  "Red oil",
+  "Better leaves",
+  "Salt and maggi",
+  "Dry fish"
+  ]
+  },
+  {
+  Title:"Eru",
+  description:"Eru is a traditional meal in Bamilike made with water leaves, eru leaves, red oil and water fufu",
+  image:"images/Eru.jpg",
+  ingredients:[
+  "Water leaves",
+  "Eru leaves", 
+  "Red oil",
+  "Salt and maggi",
+  "Crefish",
+  "Water fufu"
+  ]
+  }
+],
+Bakoko:[
+{
+Title:"Kok",
+description:"kok is a traditional meal in Bakoko made with eru leaves,groundnuts,sugar and cassava",
+image:"images/kok.jpg",
+ingredients:[
+"Eru leaves",
+"Groundnuts",
+"Sugar",
+"Salt",
+"Banga",
+"Cassava"
+]
+},
+{
+Title:"Ndole",
+description:"Ndole and plantian is a traditional meal made with better leaves ,groundnuts,and plantians ",
+image:"images/Ndole.jpg",
+ingredients:[
+"Better leaves",
+"Groundnuts",   
+"Groundnut oil",
+"Maggi and salt",
+"Ginger and gallies",
+"onion",
+"Plantians"
+]
+},
+{
+Title:"Ekwang",
+description:"Ekwang is a traditional meal in Bakoko made with grated cocoyams, cocoyam leaves, and palm nut soup",
+image:"images/ekwang.jpg",
+ingredients:[
+"Grated cocoyams",
+"Cocoyam leaves",
+"Palm nut soup",
+"Meat or fish",
+"Salt and maggi"
+]
+}
+],
+WOM:[
+{
+Title:"Fufu",
+title:"fufu  and Soup",
+description:"Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
+image:"images/fufu.jpg",
+tribalname:"",
+ingredients: [
+"corn flour",
+"Boild water",
+"Fresh vegitable",
+"Fowl", 
+"maggi ans salt"
+]
+},
+{
+Title:"Fufu and khati khati",
+description:"Fufu and khati khati is a traditional meal in kom that is made with fresh vegitables,fowl and grind corn",
+image:"images/fufu.jpg",
+tribalname:"",
+ingredients: [
+"corn flour",
+"Boild water",
+"Fresh vegitable",
+"Fowl",
+"maggi ans salt"
+]
+}
+]
+}  
